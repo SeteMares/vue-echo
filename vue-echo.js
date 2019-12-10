@@ -1,4 +1,5 @@
 import Echo from 'laravel-echo';
+window.Pusher = require('pusher-js')
 
 export default {
     install(Vue, options) {
@@ -16,7 +17,8 @@ export default {
         }
         else
         {
-            Vue.prototype.$echo = new Echo(options);
+            window.Echo = new Echo(options);
+            Vue.prototype.$echo = window.Echo
         }
 
         Vue.mixin({
