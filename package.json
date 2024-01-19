@@ -22,8 +22,8 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "laravel-echo": "^1.6.1",
-    "pusher-js": "^5.0.3"
+    "laravel-echo": "^1.15.3",
+    "pusher-js": "^7.6.0"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
